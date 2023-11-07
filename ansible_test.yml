@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    - name: test ansible
+      shell: apt update && apt upgrade -y
+      args:
+        chdir: $HOME
+        

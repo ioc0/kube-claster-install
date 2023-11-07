@@ -1,0 +1,12 @@
+[control_plane]
+control1 ansible_host=192.168.31.162 ansible_user=root
+
+[workers]
+worker1 ansible_host=192.168.31.163 ansible_user=root
+worker2 ansible_host=192.168.31.164 ansible_user=root 
+
+[ioc0nas]
+ioc0nas ansible_host=192.168.31.200 ansible_user=root
+
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3
